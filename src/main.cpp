@@ -44,7 +44,7 @@ class LogFile{
 };
 
 void MutexTester();
-void MutexTester1();
+void MutexTester1(LogFile &);
 void shared_print(string s,int i );
 
 std::mutex m;
@@ -132,10 +132,10 @@ int main()
     LogFile log;
     thread t6(MutexTester1,ref(log));
 
-    // for(int i=0;i<100;i++){
-    // 	log.shared_print("main thread",i);
-    // }
-    //t6.join();
+    for(int i=0;i<1000;i++){
+    	log.shared_print("main thread",i);
+    }
+    t6.join();
 
 
     return 0;
@@ -176,7 +176,7 @@ void MutexTester(){
 
 
 void MutexTester1(LogFile& log){
-	for(int i=0;i<100;i++){
+	for(int i=0;i<1000;i++){
 		log.shared_print("mutex thread 1 :",i);
 	}
 
