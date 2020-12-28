@@ -1,0 +1,1 @@
+/usr/bin/c++ -pthread -Wno-dev  -pthread CMakeFiles/MultiThreading_tst.dir/BoardTest.cpp.o CMakeFiles/MultiThreading_tst.dir/ComputerTest.cpp.o CMakeFiles/MultiThreading_tst.dir/PlayerTest.cpp.o CMakeFiles/MultiThreading_tst.dir/main.cpp.o -o MultiThreading_tst  ../libMultiThreading_lib.a ../lib/libgtest.a -lpthread 

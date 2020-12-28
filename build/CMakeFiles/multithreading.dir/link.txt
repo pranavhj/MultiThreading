@@ -1,0 +1,1 @@
+/usr/bin/c++ -pthread -Wno-dev  -pthread CMakeFiles/multithreading.dir/src/main.cpp.o -o multithreading 

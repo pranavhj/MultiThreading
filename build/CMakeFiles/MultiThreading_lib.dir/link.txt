@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMultiThreading_lib.a CMakeFiles/MultiThreading_lib.dir/src/main.cpp.o
+/usr/bin/ranlib libMultiThreading_lib.a

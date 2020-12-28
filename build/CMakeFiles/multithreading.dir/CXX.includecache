@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pranav/MultiThreading/src/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+vector
+-
+string
+-
+fstream
+-
+
