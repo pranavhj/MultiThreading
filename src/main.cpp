@@ -7,6 +7,11 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <unistd.h>
+#include <sys/types.h>
+#include <pwd.h>
+
+
 
 
 
@@ -50,7 +55,10 @@ void shared_print(string s,int i );
 std::mutex m;
 
 int main()
-{ 	 
+{ 
+    struct passwd *pw = getpwuid(getuid());
+
+    const char *homedir = pw->pw_dir;
     /////////Checking normal threading
     cout<<"Main thread ID is "<<this_thread::get_id()<<endl;
 
